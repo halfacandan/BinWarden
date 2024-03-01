@@ -1,0 +1,33 @@
+# Check that mod_rewrite is enabled
+ <IfModule mod_rewrite.c>
+    # Redirect to resful -style urls
+    RewriteEngine on
+    RewriteBase /binwarden/
+
+    # Rewrite React routes to a single, index file
+    RewriteCond %{REQUEST_URI} !^/index\.html$ [NC]
+    RewriteCond %{REQUEST_URI} !^/sitemap\.php$ [NC]
+    RewriteCond %{REQUEST_URI} !^/sitemap\.xml$ [NC]
+    RewriteCond %{REQUEST_URI} !^.*\.(?:js|css|png|jpg|ico|json)$ [NC]
+    RewriteRule .* index.html?path=%{REQUEST_URI} [QSA,L]
+
+    # Rewrite sitemap
+    RewriteCond %{REQUEST_URI} ^/sitemap\.xml$ [NC]
+    RewriteRule .* sitemap.php [QSA,L]
+</IfModule>
+# DISABLE CACHING of index page
+<FilesMatch "index\.html">
+    <IfModule mod_expires.c>
+        ExpiresActive Off
+    </IfModule>
+    <IfModule mod_headers.c>
+        FileETag None
+        Header unset ETag
+        Header unset Pragma
+        Header unset Cache-Control
+        Header unset Last-Modified
+        Header set Pragma "no-cache"
+        Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+        Header set Expires "Thu, 1 Jan 1970 00:00:00 GMT"
+    </IfModule>
+</FilesMatch>

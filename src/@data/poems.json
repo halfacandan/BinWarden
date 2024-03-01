@@ -1,0 +1,338 @@
+[
+    {
+        "index": 0,
+        "nav": "onnly_bird_song_noo",
+        "title": "Bönidal, Lönning, Lunnasting",
+        "derivation": "Bönidal- bœn - as in 'bœnhús' -house of prayer; dalr (ON) a dale, valley, possibly patches of arable land (Jakobsen, p34 & p131)",
+        "gridref": "HU511648",
+        "template": "left",
+        "poem": "<h3 class=\"shetland\">Onnly bird-sang noo</h3><p class=\"shetland\">Stirleens in squadrons bear uncans<br/>fae barn tae shimley: föls o da air<br/>at haem i da waas. Alang aeshins,<br/>crusty wi aald man's baerd,<br/>a Robbie Cuddie jinks, aaber<br/>ta shaa you roond. At da shore,<br/>böds an noosts mulder.<br/>Draa dee in ta da fire fir a yarn;<br/>dan, whin he's faa'n in ess,<br/>twartree göd wirds.</p><h3 class=\"english\">Only bird-song now</h3><p class=\"english\">Starlings in squadrons bear news<br/>from barn to chimney: birds of the air<br/>at home in the walls. Along gable-edge,<br/>crusty with lichen,<br/>a wren jinks, keen<br/>to show you round. At the shore,<br/>lodges and boat-shelters crumble.<br/>Draw up to the fire for story-telling;<br/>then, once it's collapsed in ash,<br/>a brief prayer.</p>",
+        "images": {
+            "main": [
+                "images/01_onnly_bird_song_noo/main.jpg"
+            ],
+            "group": {
+                "images": [
+                    { "url": "images/01_onnly_bird_song_noo/1.jpg" },
+                    { "url": "images/01_onnly_bird_song_noo/2.jpg" },
+                    { "url": "images/01_onnly_bird_song_noo/3.jpg" },
+                    { "url": "images/01_onnly_bird_song_noo/4.jpg" },
+                    { "url": "images/01_onnly_bird_song_noo/5.jpg" }
+                ]
+            }
+        }
+    },
+    {
+        "index": 1,
+        "nav": "da_lang_view",
+        "title": "Sannik, Sweening Voe (Inhabited from c1850 until late 20th century)",
+        "derivation": "Sandwik: Sandr - sand (O.N.); vik- inlet, small bay (O.N.); (Jakobsen, p93 & p115)",
+        "gridref": "HU459688",
+        "template": "right",
+        "poem": "<h3 class=\"shetland\">Da lang view</h3><p class=\"shetland\">A boat's oars hark ta Swining Voe:<br />freends, unlippened, wi a sprickle o mackreel.<br />Shö laeves da hirdin fir damoarn,<br />bakes scones, wöshes up da laem;<br />nivver dips her, staands owre dem<br />till dey'r stappit - <em>'tak een, tak twa!'</em><br />Her days here ir numbered.<br />Foo lang afore da taft feels<br />her weicht fir a hidmost time?</p><h3 class=\"english\">The long view</h3><p class=\"english\">A boat's oars whisper to Swining Voe:<br />friends, unexpected, with a few wriggling mackerel.<br />She leaves the gleaning for tomorrow,<br />bakes oatcakes, washes the dishes;<br />never pulls up a chair, stands over them<br />till they're stuffed - <em>'have one, have two!'</em><br />Her days here are numbered.<br />How long before the thwart feels<br />her weight for a final time?</p>",
+        "images": {
+            "main": [
+                "images/02_da_lang_view/main.jpg"
+            ],
+            "group": {
+                "images": [
+                    { "url": "images/02_da_lang_view/1.jpg" },
+                    { "url": "images/02_da_lang_view/2.jpg" },
+                    { "url": "images/02_da_lang_view/3.jpg" },
+                    { "url": "images/02_da_lang_view/4.jpg" }
+                ]
+            }
+        }
+    },
+    {
+        "index": 2,
+        "nav": "on_a_nicht_o_distress",
+        "title": "Da Fain (or Fern), Grönafirth, Nort Nesting",
+        "derivation": "Da Fain / possibly from Fēna, O.N. - a fen, a quagmire (Jakobsen, p13)",
+        "gridref": "HU463594",
+        "template": "left",
+        "poem": "<h3 class=\"shetland\">On a nicht o distress</h3><p class=\"shetland\">Da lino lifts as Faider wins<br />fae da lammie hoose, drookit;<br />hings up his oilskins; winders<br />foo dey'll manage trowe anidder winter.<br />Aald Daa draas him in ta da stove, blyde<br />he's lang haem fae da sea. Midder fills<br />da kettle, spreads scones fir supper;<br />kens nane 'll come in aboot da nicht.</p><p class=\"shetland\">Steep stair tae da laft:<br />bairns prammed in,<br />happy as a yalloo door.<br />On a coorse nicht, flans i da lum,<br />dey poo da twilt owre dir lugs.</p><h3 class=\"english\">On a stormy night</h3><p class=\"english\">The lino lifts as Dad returns<br />from the lambs' barn, soaked to the skin;<br />hangs up his oilskins; wonders<br />how they'll manage through another winter.<br />Grandad draws in to the stove, glad<br />He's no longer at sea. Mum fills<br />the kettle, spreads oatcakes for supper;<br />knows no neighbour will come along tonight.</p><p class=\"english\">Steep stair to attic:<br />children squeezed in<br />happy as a yellow door.<br />On a stormy night, sudden gusts in the chimney,<br />they pull the quilt over their ears.</p>",
+        "images": {
+            "main": [
+                "images/03_on_a_nicht_o_distress/main.jpg",
+                "images/03_on_a_nicht_o_distress/main2.jpg"
+            ],
+            "group": {
+                "images": [
+                    { "url": "images/03_on_a_nicht_o_distress/1.jpg", "className": "medium" },
+                    { "url": "images/03_on_a_nicht_o_distress/2.jpg", "className": "medium" }
+                ]
+            }
+        }
+    },
+    {
+        "index": 3,
+        "nav": "afore_da_factor",
+        "title": "Ockran, Aeshaness",
+        "derivation": "Okren - akr (O.N.) corn-field; 'á Økrun' - name of a Faroese village (Jakobsen, p19)",
+        "gridref": "HU245844",
+        "template": "right",
+        "poem": "<h3 class=\"shetland\">Afore da factor darkened da door, dey tocht</h3><p class=\"shetland\">whaar better apön a simmer's day dan here:<br />quiet, shaltered, lyin i da face o da sun?<br />wir ain mill-burn at nivver rins dry;<br />at da geo, hit's a frush owre da banks<br />wir ponies apö da hill; an wir mödow, up tae<br />da hochs in a ön o haet, waitin fir da sye<br />i da yerd we'll hae desses an skrews<br />ta see wis trowe winter<br />wir girnal foo, da barn forbye.</p><h3 class=\"english\">Before the factor darkened the door, they thought</h3><p class=\"english\">where better on a summer's day than here:<br />quiet, sheltered, lying in the face of the sun?<br />our own mill-burn that never runs dry<br />at the inlet, it's a gush over the cliffs<br />our ponies on the hill; and our meadow, knee-deep<br />in sultry heat, waiting for the scythe<br />in the yard we'll have hay-stacks and oat-stacks<br />to see us through winter<br />the meal-chest full, the barn as well.</p>",
+        "images": {
+            "main": [
+                "images/04_afore_da_factor/main.jpg"
+            ],
+            "group": {
+                "images": [
+                    { "url": "images/04_afore_da_factor/1.jpg" },
+                    { "url": "images/04_afore_da_factor/2.jpg" },
+                    { "url": "images/04_afore_da_factor/3.jpg" }
+                ]
+            }
+        }
+    },
+    {
+        "index": 4,
+        "nav": "hooses_wi_lang_memories",
+        "title": "Saeter o Ennisfirt, Gunnister Voe, Nortmaven",
+        "derivation": "Setr (O.N. homestead) - Eniss (man's name) (Jakobsen, p94)",
+        "gridref": "HU313743",
+        "template": "left",
+        "poem": "<h3 class=\"shetland\">Hooses wi lang memories</h3><p class=\"shetland\">Atween Birka Vird an da voe<br />de'r little grund ta wirk<br />but nae want o soleed granite.<br />Dis hoose 'll be tellin hits tale<br />lang eftir fock seek a aesier life:<br />whin dey trade dat view ta Foula<br />fir mair laand, fir Lerrick's lanes,<br />fir New Zealand or Australia.</p><p class=\"shetland\">Hooses draem o faemlies,<br />a scry o bairns, wyshin apö da line,<br />a mill-steyn dirlin.</p><h3 class=\"english\">Houses with long memories</h3><p class=\"english\">Between summit and the inlet<br />there's little ground to cultivate<br />but no lack of solid granite.<br />This house will be telling its tale<br />long after folk seek an easier life:<br />when they trade that view to Foula<br />for more land, for Lerwick's lanes,<br />for New Zealand or Australia.</p><p class=\"english\">Houses dream of families,<br />a screed of children, washing on the line,<br />a mill-stone turning.</p>",
+        "images": {
+            "main": [
+                "images/05_hooses_wi_lang_memories/main.jpg"
+            ],
+            "group": {
+                "images": [
+                    { "url": "images/05_hooses_wi_lang_memories/1.jpg" },
+                    { "url": "images/05_hooses_wi_lang_memories/2.jpg" },
+                    { "url": "images/05_hooses_wi_lang_memories/3.jpg" }
+                ]
+            }
+        }
+    },
+    {
+        "index": 5,
+        "nav": "on_your_ain",
+        "title": "Nort Ham, Muckle Röe, Delting",
+        "derivation": "Ham - O.N. hϙfn - haven, harbour (Jakobsen, p63)",
+        "gridref": "HU304666",
+        "template": "right",
+        "poem": "<h3 class=\"shetland\">On your ain</h3><p class=\"shetland\">Granite gaevil ta da sun, on your ain here,<br />laek da erne on his skerry, or da swabi on his een.<br />Nane but dem ta share da view wi you.<br />Is yun a yowe or a rock apö da broo? Hit's laek<br />as if da hoose cam oot o da byörgs, unbidden:<br />steyn aawye, fine fir biggin - even da mill is<br />a wirk o art - but a trysht for horrow or ploo.<br />Sees-du yun boat makkin fir da shore -<br />whit tinks-du ir dey seekin?</p><h3 class=\"english\">On your own</h3><p class=\"english\">Granite gable to the sun, on your own here,<br />like the sea-eagle on his stack, or the black-back on his.<br />Only them to share the view with you.<br />Is that a ewe or a rock on the slope? It's as if<br />the house emerged from the rocky outcrops, unbidden:<br />stone everywhere, fine for building - even the mill is<br />a work of art - but awkward for harrow or plough.<br />Do you see that boat approaching the shore -<br />what do you think they might want?</p>",
+        "images": {
+            "main": [
+                "images/06_on_your_ain/main.jpg"
+            ],
+            "group": {
+                "images": [
+                    { "url": "images/06_on_your_ain/1.jpg" },
+                    { "url": "images/06_on_your_ain/2.jpg" },
+                    { "url": "images/06_on_your_ain/3.jpg" },
+                    { "url": "images/06_on_your_ain/4.jpg" }
+                ]
+            }
+        }
+    },
+    {
+        "index": 6,
+        "nav": "an_ivery_een_vod_noo",
+        "title": "Upper Skōlla, Firth, Delting",
+        "derivation": "Skōlla - ON shed, hut - farm name (Jacobsen, p96)",
+        "gridref": "HU444736",
+        "template": "left",
+        "poem": "<h3 class=\"shetland\">An ivery een vod noo</h3><p class=\"shetland\">Pund o Löt, Peerie Löt, Muckle Löt an Holla,<br />Da Quilbigirts, Da Toptigirts, Da Newoose an Upper Skolla.<br />Da Bergens nixt ta Boanniehoose, Da Giltik an Da Rös,<br />Eftir dat Da Punds o Firt, nixt ta dat Da Crös.<br />Flugirt lies in owre da hill, Sandgyo is but lonnly,<br />Mungraclett lies in a blett, an da Vellen, breeds onnly.</p>",
+        "images": {
+            "main": [
+                "images/06_an_ivery_een_vod_noo/main1.jpg"
+            ],
+            "group": {
+                "images": [
+                    { "url": "images/06_an_ivery_een_vod_noo/1.jpg", "className": "verylarge" }
+                ]
+            }
+        }
+    },
+    {
+        "index": 7,
+        "nav": "da_loard_gies",
+        "title": "Delting Disaster Memorial, Mossbank",
+        "derivation": "Delting Disaster Memorial, Mossbank",
+        "gridref": null,
+        "template": "right",
+        "poem": "<h3 class=\"shetland nopad\">Da Loard gies an da Loard taks</h3><p class=\"shetland nopad\"><em>Firts Voe, 1900</em><br/><br/>In Delting, a black Yöl, wi dir haddock boats<br/>foondered i da gale an naethin but döl.<br/>Oot owre, at Mongreklett, a midder cöllies roond<br/>her faiderless tings, hoids her tears.</p><p class=\"shetland\">At Lüt an Pund o Lüt da sun is near-bi-gyaan.<br/>Da aald midder consoles da bride, da dochter.<br/>Dey'r nae boadies ta murn; nedder o her man,<br/>nor her faider nor her fowr bördly bridders.</p><h3 class=\"shetland nopad\">The Lord gives and the Lord takes</h3><p class=\"shetland nopad\"><em>Firths Voe, 1900</em><br/><br/>In Delting, a black Christmas, with their haddock boats<br/>foundered in the gale and grief everywhere.<br/>Beyond the point, at Mongreklett, a mother comforts<br/>her fatherless little ones, hides her tears.</p><p class=\"shetland\">At Lüt and Pund o Lüt the sun is miserly.<br/>The old mother consoles the bride, the daughter.<br/>There are no bodies to mourn: neither of her husband,<br/>nor her father nor her four strapping brothers.</p>",
+        "images": {
+            "main": [
+                "images/07_da_loard_gies/main1.jpg",
+                "images/07_da_loard_gies/main2.jpg"
+            ],
+            "group": {
+                "images": [
+                    { "url": "images/07_da_loard_gies/1.jpg", "className": "verylarge" }
+                ]
+            }
+        }
+    },
+    {
+        "index": 8,
+        "nav": "hoose_wi_a_view",
+        "title": "Kellister, Sandness",
+        "derivation": "Kellister - from Ketel-setr, ON personal name of homestead (Jakobsen, p152 & p94)",
+        "gridref": "HU241555",
+        "template": "left",
+        "poem": "<h3 class=\"shetland\">Hoose wi a view</h3><p class=\"shetland\">De'r steyns aawye, haeps o dem - rönnies -<br />grund cleared ivver since da Neolithic.</p><p class=\"shetland\">Wir sheep can roam as far as da eye can see.<br />We keepit da gligg tae da byre - hit's haandy<br />but whittan a nyoagin wi da kye in winter.</p><p class=\"shetland\">You can gyet fysh at Dale: dat's a braa piece<br />ta traivel. Burrafirt, Bousta, Norby - tak your pick:<br />he's a vaege ta ony o dem. We need wir boat.</p><p class=\"shetland\">Wir fock is mövin awa: ta Snarraness.an Sannis.<br />Dey draem o Australia an New Zealand, tak<br />a steyn i dir pooch; but dey manna luik back.</p><h3 class=\"english\">House with a view</h3><p class=\"english\">There are stones everywhere, heaps of them - rönnies -<br />ground cleared ever since the Neolithic.</p><p class=\"english\">Our sheep can roam as far as the eye can see.<br />We kept the aperture to the cowshed - it's handy<br />but what a moaning with the cows in winter.</p><p class=\"english\">You can get fish at Dale: that's a long distance<br />to walk. Burrafirth, Bousta, Norby - take your pick:<br />it's a journey to any of them. We need our boat.</p><p class=\"english\">Our folk are moving away: to Snarraness and Sandness.<br />They dream of Australia and New Zealand, take<br />a stone in their pocket; but they mustn't look back.</p>",
+        "images": {
+            "main": [
+                "images/08_hoose_wi_a_view/main.jpg"
+            ],
+            "group": {
+                "images": [
+                    { "url": "images/08_hoose_wi_a_view/1.jpg" },
+                    { "url": "images/08_hoose_wi_a_view/2.jpg" },
+                    { "url": "images/08_hoose_wi_a_view/3.jpg" },
+                    { "url": "images/08_hoose_wi_a_view/4.jpg" }
+                ]
+            }
+        }
+    },
+    {
+        "index": 9,
+        "nav": "hoose_apo_da_heichts",
+        "title": "Foratwatt, Waas",
+        "derivation": "Foratwatt - O.N. þveit- a parcel of land, farm name (Jakobsen, p110)",
+        "gridref": "HU247494",
+        "template": "right",
+        "poem": "<h3 class=\"shetland\">Hoose apö da heichts</h3><p class=\"shetland\">A lanerly hoose wi backstories best foryat:<br />telegrams wi black aedges o men lost.<br />Shö'd tried New Zealand, but nivver settled,<br />tinkin her rigs better, her hoose mair haemly.<br />But dey wir nae bairns.<br />Shö could see dir shadows, knee-deep<br />in flooers, bringin da baess haem fae<br />da simmer hill; an in winter, slaedgin doon<br />da darkenin, foo o maddrim an skirls.</p><h3 class=\"english\">House on the hilltop</h3><p class=\"english\">A lonely house with backstories best forgotten:<br />telegrams with black edges of men lost.<br />She'd tried New Zealand, but never settled,<br />thinking her fields better, her house more homely.<br />But there were no children.<br />She could see their shadows, knee-deep<br />in flowers, bringing the cattle home from<br />the summer hill; and in winter, sledging down<br />the darkening, full of hilarity and laughter.</p>",
+        "images": {
+            "main": [
+                "images/09_hoose_apo_da_heichts/main.jpg"
+            ],
+            "group": {
+                "images": [
+                    { "url": "images/09_hoose_apo_da_heichts/1.jpg", "className": "" },
+                    { "url": "images/09_hoose_apo_da_heichts/2.jpg", "className": "large" }
+                ]
+            }
+        }
+    },
+    {
+        "index": 10,
+        "nav": "simmer_ask",
+        "title": "Nort Ham, Sooth Havera",
+        "derivation": "Havera - probably from O.N. hafr - billy goat; or man's name Hafr (Jakobsen, p122)",
+        "gridref": "HU362266",
+        "template": "left",
+        "poem": "<h3 class=\"shetland\">Simmer ask</h3><p class=\"shetland\">Whittan a ghosts rinnin oot<br />an in: weemen kerryin peerie tings,<br />cugs o watter, lipperin kishies;<br />or men winnin back fae da far haaf<br />dug-tired fae rowin trowe a steekit stima,<br />feelin dir wye, trivvelin da Moder Dy.<br />I dir heads dey'r coontin dir blisseens<br />an maybe foo mony röfs ithin dis gadderie<br />'ll need ta be taekit come hairst.</p><h3 class=\"english\">Summer mist</h3><p class=\"english\">So many ghosts running out<br />and in: women carrying little children,<br />kegs of water, overflowing back-baskets;<br />or men returning from distant fishing grounds<br />dog-tired from rowing through dense mist,<br />feeling their way, gently sensing under-currents.<br />In their heads they're counting their blessings<br />and maybe how many roofs in this settlement<br />will need to be thatched come harvest.</p>",
+        "images": {
+            "main": [
+                "images/10_simmer_ask/main.jpg"
+            ],
+            "group": {
+                "images": [
+                    { "url": "images/10_simmer_ask/1.jpg", "className": "medium" },
+                    { "url": "images/10_simmer_ask/2.jpg", "className": "medium" }
+                ]
+            }
+        }
+    },
+    {
+        "index": 11,
+        "nav": "anunder_da_broo",
+        "title": "Brenya, Fladdabister",
+        "derivation": "Brenya ON brenna, burning of heather, woodland for farming (Jacobsen, p30)",
+        "gridref": "HU436326",
+        "template": "right",
+        "poem": "<h3 class=\"shetland\">Anunder da broo</h3><p class=\"shetland\">whaar you see dimriv brackin owre da Bard<br />an da sun mövin roond bi Helliness;</p><p class=\"shetland\">whaar de'r nae better steyn fir biggin,<br />an plenty clos ta haand;</p><p class=\"shetland\">whaar stakes can be driven deep<br />in a green laand. But we möv on:</p><p class=\"shetland\">laeve wan mizzer o heeven -<br />or wan varg - fir anidder.</p><h3 class=\"english\">Under the brow</h3><p class=\"english\">where you see sunrise breaking over the Bard<br />and the sun moving round past Helliness;</p><p class=\"english\">where there's no better stone for building,<br />and plenty close to hand;</p><p class=\"english\">where stakes can be driven deep<br />in a green land. But we move on:</p><p class=\"english\">leave one measure of heaven -<br />or one drudgery - for another.</p>",
+        "images": {
+            "main": [
+                "images/11_anunder_da_broo/main.jpg"
+            ],
+            "group": {
+                "images": [
+                    { "url": "images/11_anunder_da_broo/1.jpg" },
+                    { "url": "images/11_anunder_da_broo/2.jpg", "className": "tall" },
+                    { "url": "images/11_anunder_da_broo/3.jpg", "className": "tall" }
+                ]
+            }
+        }
+    },
+    {
+        "index": 12,
+        "nav": "whin_hit_wis_lichtsome",
+        "title": "Fladdabister, Cunningsburgh",
+        "derivation": "Fladdabister - ON flata (Shetland - flada) - a plain; bólstaðr (Shetland - busta, bister) - home, farm (Jakobsen, p26-7 & p40)",
+        "gridref": "HU435325",
+        "template": "left",
+        "poem": "<h3 class=\"shetland\">When hit wis lichtsome</h3><p class=\"shetland\">Sic a dose o fock oot wirkin da simmer rigs,<br />moarnin ta nicht: syes flashin, skurtfoos o coarn,<br />tattie-haepin; caain da hill, rooin; salistin a meenit<br />ta draa braeth. Bairns, barefit, rinnin oot an in.</p><p class=\"shetland\">In winter, dry flagged flörs, fires wi reestin tees abön;<br />sheep inbye, kye i da byres, hens neebin apö da bauk.<br />Tattie höls lipperin anunder fat skrews. Aathin trig<br />an battened doon. An fokk yarnin inta da smaa ooers.</p><h3 class=\"english\">When times were cheerful</h3><p class=\"english\">So many people outside working the summer fields,<br />morning to night: sythes flashing, armfuls of oats,<br />potato-heaping; rounding-up sheep, shearing; resting briefy<br />to draw breath. Children, barefoot, running out and in.</p><p class=\"english\">In winter, dry flagged floors, fires with legs of lamb curing above;<br />sheep in from the hill, cows in byres, hens dozing on the rafter.<br />Potato stores full under fat corn-stacks. Everything tidy<br />and battened down. And folk telling stories into the small hours.</p>",
+        "images": {
+            "main": [
+                "images/12_whin_hit_wis_lichtsome/main1.jpg",
+                "images/12_whin_hit_wis_lichtsome/main2.jpg"
+            ],
+            "group": {
+                "images": [
+                    { "url": "images/12_whin_hit_wis_lichtsome/1.jpg" },
+                    { "url": "images/12_whin_hit_wis_lichtsome/2.jpg" },
+                    { "url": "images/12_whin_hit_wis_lichtsome/3.jpg" },
+                    { "url": "images/12_whin_hit_wis_lichtsome/4.jpg" }
+                ]
+            }
+        }
+    },
+    {
+        "index": 13,
+        "nav": "naethin_is_forivver",
+        "title": "Burraland, Sandwick",
+        "derivation": "Burraland - borg O.N. a fort (broch in Shetland) (Jakobsen, p28)",
+        "gridref": "HU445234",
+        "template": "right",
+        "poem": "<h3 class=\"shetland\">Naethin is firivver</h3><p class=\"shetland\">Whin you bigg here, aside a broch,<br />wi steyn laek skelfs shaaved aesy fae da banks,<br />you tink sic coarnersteyns 'll hadd fir generations.</p><p class=\"shetland\">Whin you dell here, saa bere an coarn,<br />maa an stook it, wi sun haet apön your back,<br />an bairns wippin baands, you tink hit's fir ivver.</p><p class=\"shetland\">Whin Midder lifts a jug o blaand fae da gligg,<br />brings hit tae ta rig ta slokk your trist,<br />fir a peerie while, your wirries faa awa.</p><h3 class=\"english\">Nothing is forever</h3><p class=\"english\">When you build here, beside a broch,<br />with slithers of stone shaved easily from the cliffs,<br />you think such cornerstones will hold for generations.</p><p class=\"english\">When you dig here, sow barley and oats,<br />mow and stack it, with sun hot on your back,<br />and children making straw twists, you think it's for ever.</p><p class=\"english\">When Mother lifts a jug of whey from the wall-cavity,<br />brings it to the field to quench your thirst,<br />for a moment, your worries subside.</p>",
+        "images": {
+            "main": [
+                "images/13_naethin_is_forivver/main.jpg"
+            ],
+            "group": {
+                "images": [
+                    { "url": "images/13_naethin_is_forivver/1.jpg" },
+                    { "url": "images/13_naethin_is_forivver/2.jpg", "className": "large" }
+                ]
+            }
+        }
+    },
+    {
+        "index": 14,
+        "nav": "circles_an_squares",
+        "title": "Clumlie, Dunrossness",
+        "derivation": "Clumli - site of a former church dedicated to St Columba (Jakobsen, p174)",
+        "gridref": "HU405182",
+        "template": "left",
+        "poem": "<h3 class=\"shetland\">Circles an squares</h3><p class=\"shetland\">Dis steyn can bigg you a circle:<br />a broch wi tick waas ta staand firivver;<br />a kiln ta set a fire ta dry coarn or bere;<br />a waal fir spring watter;<br />a crub fir winterin your kale;<br />punds an crös ta gadder sheep;<br />quern steyns, mill steyns, skroo-steids.</p><p class=\"shetland\">Dis steyn can bigg you straight an square:<br />a hoose, a barn, a byre, a yard dyk;<br />a window, a door; a hearth, a braa new porch.<br />Maybe a kirk, an a steyn ta mark a grave.</p><h3 class=\"english\">Circles and squares</h3><p class=\"english\">This stone can build a circle for you:<br />a broch with thick walls to stand forever;<br />a kiln ta set a fire to dry oats or barley;<br />a well for spring water;<br />an enclosure for wintering your kale;<br />pounds an folds to gather sheep;<br />quern stones, mill stones, foundations for stacks.</p><p class=\"english\">This stone can build straight and square for you:<br />a house, a barn, a byre, a yard wall;<br />a window, a door, a hearth, a fine new porch.<br />Maybe a church, and a stone to mark a grave.</p>",
+        "images": {
+            "main": [
+                "images/14_circles_an_squares/main.jpg"
+            ],
+            "group": {
+                "images": [
+                    { "url": "images/14_circles_an_squares/1.jpg" },
+                    { "url": "images/14_circles_an_squares/2.jpg", "className": "tall" },
+                    { "url": "images/14_circles_an_squares/3.jpg", "className": "tall" }
+                ]
+            }
+        }
+    },
+    {
+        "index": 15,
+        "nav": "da_peerie_Isles",
+        "title": "Linga, Parish of Tingwall",
+        "derivation": "Linga - ON lyng-øy - heather island ('øy' abbreviated to 'a' in Shaetlan (Jakobsen, p144 & p122)",
+        "gridref": "HU363397",
+        "template": "right",
+        "poem": "<h3 class=\"shetland\">Da Peerie Isles</h3><p class=\"shetland\">Hunkered anunder da broo - an wi Hildasay<br />bi wast - de'r a grain o shalter, but da wind<br />fae da nort comes wheepin troo.<br />De'r nae richt place fir a noost<br />or a beach ta dry wir catch.</p><p class=\"shetland\">We hae tree infants böried at Papil noo.<br />Wir fock is laevin fir Trondra, Burra, even Canada.<br />But on a boannie day, we aa tink lang fir Linga.<br />Foo muckle waar ir we pooed fae dat ebb,<br />greened up da toon, sweetened da yard?</p><h3 class=\"english\">The Little Isles</h3><p class=\"english\">Hunkered under the brow - and with Hildasay<br />to the west - there's a little shelter, but the wind<br />from the north comes whipping through.<br />There's no good place for a boat shelter<br />or a beach to dry our catch.</p><p class=\"english\">We have three infants buried at Papil now.<br />Our relatives are leaving for Trondra, Burra, even Canada.<br />But on a fine day, we all miss Linga.<br />How much seaweed have we pulled from that shore,<br />greened up the field, sweetened the yard?</p>",
+        "images": {
+            "main": [
+                "images/15_da_peerie_Isles/main.jpg"
+            ],
+            "group": {
+                "images": [
+                    { "url": "images/15_da_peerie_Isles/1.jpg" },
+                    { "url": "images/15_da_peerie_Isles/2.jpg", "className": "large" }
+                ]
+            }
+        }
+    }
+]
