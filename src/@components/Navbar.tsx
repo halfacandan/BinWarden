@@ -60,13 +60,13 @@ const Navbar = (): JSX.Element => {
                                     <SlSpeech />FAQs
                                 </MenuItem>
                             </NavLink>
-                            <NavLink to={(process.env.REACT_APP_BASENAV ?? "") + "faqs#Privacy_Policy"}>
+                            <NavLink to={(process.env.REACT_APP_BASENAV ?? "") + "/faqs#How_does_the_site_use_my_data"}>
                                 <MenuItem onClick={closeMenu} disableRipple >
                                     <FaUserLock />Privacy Policy
                                 </MenuItem>
                             </NavLink>
                             <Divider />
-                            <NavLink to={(process.env.REACT_APP_BASENAV ?? "") + "stats"}>
+                            <NavLink to={(process.env.REACT_APP_BASENAV ?? "") + "/stats"}>
                                 <MenuItem onClick={closeMenu} disableRipple >
                                     <FaChartLine />Reporting Stats
                                 </MenuItem>

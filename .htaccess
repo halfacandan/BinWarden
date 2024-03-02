@@ -4,16 +4,15 @@
     RewriteEngine on
     RewriteBase /binwarden/
 
+    # Redirect www-prefixed traffic to non-www
+    RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+    RewriteRule ^(.*)$ http://%1/binwarden/$1 [R=301,L]
+
     # Rewrite React routes to a single, index file
     RewriteCond %{REQUEST_URI} !^/index\.html$ [NC]
-    RewriteCond %{REQUEST_URI} !^/sitemap\.php$ [NC]
-    RewriteCond %{REQUEST_URI} !^/sitemap\.xml$ [NC]
     RewriteCond %{REQUEST_URI} !^.*\.(?:js|css|png|jpg|ico|json)$ [NC]
     RewriteRule .* index.html?path=%{REQUEST_URI} [QSA,L]
 
-    # Rewrite sitemap
-    RewriteCond %{REQUEST_URI} ^/sitemap\.xml$ [NC]
-    RewriteRule .* sitemap.php [QSA,L]
 </IfModule>
 # DISABLE CACHING of index page
 <FilesMatch "index\.html">

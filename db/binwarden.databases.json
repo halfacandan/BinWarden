@@ -1,0 +1,8 @@
+{
+    "website":{
+        "host": "[REDACTED]",
+        "database": "[REDACTED]",
+        "user": "[REDACTED]",
+        "password": "[REDACTED]"
+    }
+}

@@ -4,3 +4,13 @@ dist*
 analyse.html
 public/*
 *.url
+
+/api/swagger*
+/api/test/*
+/api/jwt.php
+
+/db/binwarden.live.databases.json
+/db/encrypt.php
+/db/.htaccess
+
+/admin/SQL/000-Website_Scripts/002-SeedData.sql

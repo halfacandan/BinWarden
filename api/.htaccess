@@ -1,0 +1,14 @@
+# Check that mod_rewrite is enabled
+<IfModule mod_rewrite.c>
+    # Redirect to resful -style urls
+    RewriteEngine on
+    RewriteBase /
+
+    # Redirect www-prefixed traffic to non-www
+    RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+    RewriteRule ^(.*)$ http://%1/binwarden/api/$1 [R=301,L]
+
+    RewriteCond %{REQUEST_URI} !binwarden/api/index.php$ [NC]
+    RewriteCond %{REQUEST_URI} !^.*\.(?:css|png|gif|webp|ico)$ [NC]
+    RewriteRule .* binwarden/api/index.php?request_uri_path=%{REQUEST_URI} [QSA,L]
+</IfModule>

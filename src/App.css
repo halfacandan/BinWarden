@@ -9,7 +9,7 @@ html, body {
 
 body {
     margin:0;
-    background-color: #d6d4d4;
+    background-color: #e6e6e6;
     color: #313131;
     font-family: Geneva,Helvetica,sans-serif,Verdana,Arial;
     overflow-x: hidden; /* Hide horizontal scrollbar */
@@ -66,11 +66,22 @@ p {
     font-size: clamp(10px, 3vw, 16px);
 }
 
+ol {
+    font-size: clamp(10px, 3vw, 16px);
+    text-align: left;
+    margin-left: 5px;
+}
+
 .sectionContainer {
     width: 100%;
     float: left;
     padding: 15px;
     box-sizing: border-box;
+}
+
+.sectionContainer.centred {
+    display: flex;
+    justify-content: center;
 }
 
 /* Menus */
@@ -128,9 +139,43 @@ body .MuiPopover-root {
     position: absolute; /* CSS hack to avoid fixed position menus that don't scroll with the page */
 }
 
+/* Animations */
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+    to {
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+    from {
+  -ms-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+    to {
+  -ms-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
 /* Specific Styling */
 
-button.MuiButton-contained {
+button.MuiButton-contained.green,
+button.MuiButton-contained.black,
+button.MuiButton-contained.submit {
     padding: 25px;
     font-size: clamp(12px, 3vw, 20px);
     margin: 15px;
@@ -152,9 +197,20 @@ button.MuiButton-contained.black {
     border: 1px solid #000;
 }
 
-button.MuiButton-contained span.MuiButton-startIcon {
+button.MuiButton-contained.green span.MuiButton-startIcon,
+button.MuiButton-contained.black span.MuiButton-startIcon,
+button.MuiButton-contained.submit span.MuiButton-startIcon {
     position: absolute;
     left: 20px;
+}
+
+button.submit span.MuiButton-startIcon {
+    -webkit-animation: rotating 5s linear infinite;
+    -moz-animation: rotating 5s linear infinite;
+    -ms-animation: rotating 5s linear infinite;
+    -o-animation: rotating 5s linear infinite;
+    animation: rotating 5s linear infinite;
+    left: 70px;
 }
 
 .binButtonWrapper, .textFieldWrapper {
@@ -194,64 +250,43 @@ button.submit {
     width: 100%;
 }
 
-/* MessageBar */
+/* Notifications */
 
-.messageBar {
-    display: block;
-    float: left;
-    padding: 10px;
+#notifications .error {
+    color: #ffffffde;
     background-color:#e85353;
     border: 1px solid #9b0000;
-    width: 100%;
-    box-sizing: border-box;
-    height: 40px;
-    position: relative;
 }
 
-.messageBar.hide {
-    display: none;
-}
-
-.messageBar.success {
+#notifications .success {
+    color: #ffffffde;
     background-color:#438150;
     border: 1px solid #00410e;
 }
 
-.messageBar .icon {
+#notifications .error .icon,
+#notifications .success .icon {
     display: block;
     float: left;
     color: #9b0000;
-    width: 25px;
+    width: 15px;
     margin-right: 10px;
 }
 
-.messageBar.success .icon {
+#notifications .success .icon {
     color: #00410e;
 }
 
-.messageBar p {
-    line-height: 1.2em;
-    float: left;
-    display: block;
-    width: calc(100% - 50px);
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-.messageBar .messageClose {
-    color: #fff;
-    float: left;
-    position: absolute;
-    right: 10px;
-    width: 25px;
-    margin-left: 10px;
+#notifications .error div,
+#notifications .success div {
+    margin-left: 0;
 }
 
 /* NewsBar */
 
 .newsBar {
-    display: block;
+    display: flex;
+    align-items: center;
     float: left;
     padding: 10px;
     background-color: #1c80f1;
@@ -283,4 +318,122 @@ button.submit {
 
 .newsBar p a:hover {
     color: #cccccc;
+}
+
+/* FAQ/Guide Pages */
+
+div.text {
+    padding: 0 20px;
+}
+
+ul.faq {
+    text-align: left;
+}
+
+ul.faq li {
+    margin: 25px 0;
+}
+
+ul.faq li img {
+    margin: 0 10px;
+    max-width: 95%;
+}
+
+.guideSections {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.guideSections .guideSectionsItem {
+    position: relative;
+}
+
+.guideSections .guideSectionsItem a.copyAnchor {
+    position: absolute;
+    right: 20px;
+    top: 13px;
+    color: #fff;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.guideSections .guideSectionsItem a.copyAnchor svg {
+    top: 15px;
+}
+
+.guideSections .guideSectionsItem a.copyAnchor:hover {
+    text-decoration: underline;
+}
+
+.guideSections .MuiAccordion-root {
+    background-color: #1565c0;
+    color: #ffffffde;
+    text-align: left;
+    font-size: clamp(14px, 100%, 16px);
+}
+
+.guideSections .MuiAccordion-root.striped {
+    background-color: #1c80f1;
+}
+
+.guideSections .MuiAccordion-root:hover {
+    background-color: #4093f1;
+}
+
+.guideSections .MuiAccordion-root svg {
+    color: #ffffffde;
+}
+
+.guideSections .MuiAccordion-root p {
+    margin-left: 10px;
+}
+
+.guideSections .MuiAccordion-root p.readability {
+    font-size: clamp(12px, 90%, 14px);
+}
+
+.guideSections .MuiAccordion-root p.readability a,
+.guideSections .MuiAccordion-root p.readability a:hover,
+.guideSections .MuiAccordion-root p.readability a:active,
+.guideSections .MuiAccordion-root p.readability a:visited {
+    color: #ffffffde;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.guideSections .MuiAccordion-root p.readability a:hover {
+    text-decoration: underline;
+}
+
+.guideSections .MuiAccordionDetails-root {
+    border: 0;
+}
+
+.guideSections .MuiCollapse-root:not(.MuiCollapse-hidden) {
+    background-color: #4093f1;
+    color: #ffffffde;
+    padding: 10px;
+    border-bottom: 1px solid #1565c0;
+}
+
+.guideSections .MuiCollapse-root p {
+    padding: 0;
+}
+
+.guideSections .MuiCollapse-root p em {
+    font-style: bold;
+}
+
+.guideSections ol img {
+    max-width: 95%;
+}
+
+/* Stats Page */
+
+.csvExport {
+    position: absolute !important;
+    z-index: 5;
 }

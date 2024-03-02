@@ -22,7 +22,7 @@ export default defineConfig(({ command, mode }) => {
     resolve: {
       alias: [
         { 
-          find: /(addons|classes|components|pages)\/([^\/]*)$/, 
+          find: /^(addons|classes|components|pages)\/([^\/]*)$/, 
           replacement: "./src/@$1/$2.tsx"
         },
         { 
