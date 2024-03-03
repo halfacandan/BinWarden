@@ -103,7 +103,18 @@
             switch($apiEndpoint->Method){
                 case "latest": {
             
-                    $dto = GetLatestReports($databases->website);
+                    $latestReports = GetLatestReports($databases->website);
+
+                    $dto = array(
+                        "blackBin" => array(
+                            "latest" => $latestReports["blackBin"],
+                            "nextAnon" => addBusinessDays($latestReports["blackBin"], 2)
+                        ),
+                        "greenBin" => array(
+                            "latest" => $latestReports["greenBin"],
+                            "nextAnon" => addBusinessDays($latestReports["greenBin"], 2)
+                        )
+                    );
 
                     break;
                 }

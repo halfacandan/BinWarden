@@ -21,7 +21,7 @@ const Stats = () => {
         [],
         Report,
         () => { },
-        3600
+        5
     );
     
     if(reports.length < 1) return <></>;

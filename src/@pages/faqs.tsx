@@ -24,6 +24,27 @@ const FAQs = () => {
             }
         ]
     }, anchor);
+    
+    const wasteCollection:GuideData = new GuideData({
+        "className": "guideSections",
+        "sections": [
+            {
+                "title": "Who collects our bins?",
+                "body": <><p className="readability">Edinburgh Council is responsible for the collection of our bins. The factor has no involvement in the process.</p></>
+            },
+            {
+                "title": "When should our bins get collected?",
+                "body": <><p className="readability">The collection of general waste (black bins) and recycling waste (green bins) alternates so that each is collected one week after the other to give a fortnightly collection of each bin type. Edinburgh Council provides <a target="_blank" href="https://www.edinburgh.gov.uk/directory-record/1573467/james-gall-wynd">a collection calendar on their website</a>.</p></>
+            },
+            {
+                "title": "How long do I have to wait after reporting a problem?",
+                "body": <>
+                    <p className="readability">If you have included your email address in the report, you should get an automatic acknowledgement straight away.</p>
+                    <p className="readability">The report that we send has to be logged by a member of Edinburgh Council's staff. They then aim to collect the waste within two working days (Mon-Fri) of our report being logged. Typically this means that a report made on Tuesday will lead to a bin collection on Thursday whereas a report on Friday will be collected the following Tuesday (since Saturday and Sunday are not working days).</p>
+                </>
+            }
+        ]
+    }, anchor);
 
     const yourData:GuideData = new GuideData({
         "className": "guideSections",
@@ -74,6 +95,9 @@ const FAQs = () => {
         <>
             <div className="sectionContainer">
                 <div className="text">
+                
+                    <h3>Waste Collection</h3>
+                    <AccordionGuide guideData={wasteCollection} />
 
                     <h3>About Bin Warden</h3>
                     <AccordionGuide guideData={aboutBinWarden} />

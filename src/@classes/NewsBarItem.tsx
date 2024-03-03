@@ -10,7 +10,7 @@ export default class NewsBarItem {
 
     public readonly Message: JSX.Element;
 
-    private  ParseDate(message:string|null):string {
+    private ParseDate(message:string|null):string {
 
         if(message == null || message.trim().length < 1) { 
             return "";

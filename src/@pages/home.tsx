@@ -26,7 +26,7 @@ const Home = () => {
         [],
         LatestReport,
         () => { },
-        3600
+        5
     );
 
     const [blackBinToggle, setBlackBinToggle] = useState<boolean>(false);
@@ -34,12 +34,46 @@ const Home = () => {
     const [email, setEmail] = useState<string|null>(null);
     const [submitting, setSubmitting] = useState<boolean>(false);
 
-    const blackBinReported = dayjs().utc().to(dayjs.utc(latestReport?.BlackBin), true);
-    const greenBinReported = dayjs().utc().to(dayjs.utc(latestReport?.GreenBin), true);
+    const blackBinReported = dayjs().utc().to(dayjs.utc(latestReport?.LastBlackBin), true);
+    const greenBinReported = dayjs().utc().to(dayjs.utc(latestReport?.LastGreenBin), true);
+
+    const emailIsValid = function(emailAddress: string|null): boolean {
+
+        if((emailAddress ?? '').trim() == '') return false;
+
+        const isValidEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+
+        return (emailAddress?.match(isValidEmail) ?? []).length > 0;
+    }
+
+    const formCanSubmit = function(suppressNotification: boolean = false): boolean {
+
+        const emailCheck = emailIsValid(email);
+        const blackBinCheck = !blackBinToggle || emailCheck || (blackBinToggle && (latestReport?.CanReportBlackBinsAnonymously() ?? true));
+        const greenBinCheck = !greenBinToggle || emailCheck || (greenBinToggle && (latestReport?.CanReportGreenBinsAnonymously() ?? true));
+
+        if(!blackBinCheck || !greenBinCheck){
+            
+            if(!suppressNotification){
+                toast("The selected bins have already been anonymously reported in the last 2 working days.\n\nEnter your email address to report the problem again.", {
+                    duration: 5000,
+                    position: 'top-right',
+                    className: "error",
+                    icon: <FaCircleXmark className="icon" />
+                });
+            }
+
+            return false;
+        }
+        
+        return true;
+    }
 
     const submitForm = function(){
 
         if(blackBinToggle || greenBinToggle){
+
+            if(!formCanSubmit()) return;
 
             setSubmitting(true);
 
@@ -62,22 +96,38 @@ const Home = () => {
             .then((response) => response.json())
             .then(json => {
 
-                // Clear all cached API calls so that new settings can take effect
-                ls.clear();
+                const isError = json.errorMessage != null;
 
                 setSubmitting(false);
-                setLatestReport(new LatestReport({
-                    "blackBin": blackBinToggle ? dayjs.utc().format() : latestReport?.BlackBin,
-                    "greenBin": greenBinToggle ? dayjs.utc().format() : latestReport?.GreenBin
-                }));
+
+                if(!isError){
+
+                    // Clear all cached API calls so that new settings can take effect
+                    ls.clear();
+
+                    setLatestReport(new LatestReport({
+                        "blackBin": {
+                            "latest": blackBinToggle ? dayjs.utc().format() : latestReport?.LastBlackBin,
+                            "nextAnon": blackBinToggle ? dayjs.utc().add(2, "day").format() : latestReport?.NextBlackBin
+                        },
+                        "greenBin": {
+                            "latest": greenBinToggle ? dayjs.utc().format() : latestReport?.LastGreenBin,
+                            "nextAnon": greenBinToggle ? dayjs.utc().add(2, "day").format() : latestReport?.NextGreenBin
+                        }
+                    }));
+
+                    setBlackBinToggle(false);
+                    setGreenBinToggle(false);
+                    setEmail('');
+                }
 
                 // Display a message
-                const responseMessage = json.successMessage ?? json.errorMessage;                    
+                const responseMessage = isError ? json.errorMessage : json.successMessage;
                 toast(responseMessage, {
                     duration: 3000,
                     position: 'top-right',
-                    className: json.errorMessage != null ? "error" : "success",
-                    icon: <FaCircleCheck className="icon" />
+                    className: isError ? "error" : "success",
+                    icon: isError ? <FaCircleXmark className="icon" /> : <FaCircleCheck className="icon" />
                 });
             });
 
@@ -124,10 +174,11 @@ const Home = () => {
                 <div className="textFieldWrapper">
                     <TextField
                         id="email"
-                        label="(Optional) Email Address"
+                        label={(formCanSubmit(true) && email == null ? "(Optional) " : "") +  "Email Address"}
                         variant="outlined"
                         onChange={ (event) => setEmail(event.target.value) }
                         placeholder="Enter your email address to receive progress updates"
+                        value={email}
                     />
                 </div>
 
