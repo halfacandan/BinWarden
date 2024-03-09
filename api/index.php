@@ -54,10 +54,20 @@
                 exit;
             }
 
+            require_once("modules/oauth.inc.php");
             require_once("modules/email.inc.php");
 
-            $emailSent = SendEmail(
+            $userAccessToken = GetRefreshedUserToken();
+
+            if(IsNullOrEmptyString($userAccessToken)) {
+
+                header(HttpStatus::UNAUTHORIZED->value);
+                exit;
+            }
+
+            $emailSent = SendGmail(
                 $databases->website,
+                $userAccessToken,
                 $data->blackBin ?? false,
                 $data->greenBin ?? true,
                 $data->email

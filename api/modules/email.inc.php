@@ -1,37 +1,76 @@
 <?php
     
     #region Public functions
-	
-	function SendEmail(?Database $database = null, bool $blackBin, bool $greenBin, ?string $email = null): bool {
 
-		if($database == null) return false;
+    function GetGmailBody(?Database $database = null, bool $blackBin, bool $greenBin, ?string $email = null): ?array {
+
+        if($database == null) return null;
 
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) $email = null;
 
-        $to = "waste@edinburgh.gov.uk, customer.care@edinburgh.gov.uk";
-        $subject = "Missed Bin Collection (Cannot be reported online)";
-        $message = GetEmailTemplate($database, $blackBin, $greenBin);
-        $headers = array(
+        $gmailBody = array(
             "MIME-Version: 1.0",
             "Content-Type: text/html; charset=UTF-8",
-            'From: Bin Warden<binwarden@s171553821.websitehome.co.uk>'            
+            "To: <customer.care@edinburgh.gov.uk>, <waste@edinburgh.gov.uk>",
+            "From: Bin Warden<binwardenuk@gmail.com>",
+            "Subject: Missed Bin Collection (Cannot be reported online)"
         );
         if($email != null){
-            array_push($headers, 'Reply-To: '.strtolower($email));
-            array_push($headers, 'CC: '.strtolower($email));
+            array_push($gmailBody, "Reply-To: <".strtolower($email).">");
+            array_push($gmailBody, "CC: <".strtolower($email).">");
+        }
+        array_push($gmailBody, ""); // Needs a linebreak between the headers and the body in order to display the email body
+        array_push($gmailBody, GetEmailTemplate($database, $blackBin, $greenBin));
+
+        return $gmailBody;
+    }
+
+    function SendGmail(?Database $database = null, ?string $userAccessToken, bool $blackBin, bool $greenBin, ?string $email = null): bool {
+        
+        if($database == null || IsNullOrEmptyString($userAccessToken)) return false;
+
+        $curlHandler = curl_init();
+        curl_setopt($curlHandler, CURLOPT_URL, "https://www.googleapis.com/upload/gmail/v1/users/me/messages/send");
+        curl_setopt($curlHandler, CURLOPT_HTTPHEADER,
+            array(
+                'Accept: application/json',
+                'Authorization: Bearer '.$userAccessToken,
+                'Content-Type: message/rfc822'
+            )
+        );
+        curl_setopt($curlHandler, CURLOPT_RETURNTRANSFER, TRUE);
+
+        
+        curl_setopt($curlHandler, CURLOPT_NOBODY, false);
+        
+        $gmailBody = GetGmailBody($database, $blackBin, $greenBin, $email) ?? [];
+        curl_setopt($curlHandler, CURLOPT_POSTFIELDS, implode("\r\n", $gmailBody));
+
+        $result = curl_exec($curlHandler);
+        if(curl_getinfo($curlHandler, CURLINFO_HTTP_CODE) == 200){
+
+            curl_close($curlHandler);
+
+            $userInfo = json_decode($result);
+
+            try {
+                
+                $mailSent = $userInfo->labelIds[0] == "SENT";
+
+                if($mailSent) LogEmailSent($database, $blackBin, $greenBin);
+
+                return $mailSent;
+
+            } catch(\Throwable){
+
+                return false;
+            }
         }
 
-        $mailSent = mail(
-            $to,
-            $subject,
-            $message,
-            implode("\r\n", $headers)
-        );
-
-        if($mailSent) LogEmailSent($database, $blackBin, $greenBin);
-
-        return $mailSent;
-	}
+        curl_close($curlHandler);
+        //if(curl_errno($curlHandler)) {}
+        return false;           
+    }
 
     function GetEmailTemplate(?Database $database = null, ?bool $blackBin = false, ?bool $greenBin = false, ?int $templateId = 1, ?int $siteId = 1): ?string{
 
