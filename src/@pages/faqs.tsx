@@ -14,13 +14,17 @@ const FAQs = () => {
             {
                 "title": "Why did you create this site?",
                 "body": <>
-                            <p className="readability">Edinburgh Council has failed to provide a regular bin collection service for over 18 months. This site will let us all report issues to the Council when we see them.</p>
+                            <p className="readability">Edinburgh Council has failed to provide a regular bin collection service since August 2022. This site will let us all report issues to the Council when we see them.</p>
                             <p className="readability">My goal is to make it as easy as possible to notify the Council of a failed collection.</p>
                         </>
             },
             {
                 "title": "How did you create this site?",
                 "body": <><p className="readability">The site's front-end uses <a target="_blank" href="https://react.dev/">React</a>, the API is written in <a target="_blank" href="https://www.php.net/">PHP</a>. You can <a target="_blank" href="https://github.com/halfacandan/BinWarden">view the site's source code on GitHub</a>.</p></>
+            },
+            {
+                "title": "How do I contact the Owner of Bin Warden?",
+                "body": <><p className="readability">You can either shine a bin-shaped light into the sky or email me at <a href="mailto:binwardenuk@gmail.com">binwardenuk@gmail.com</a>.</p></>
             }
         ]
     }, anchor);
@@ -38,10 +42,7 @@ const FAQs = () => {
             },
             {
                 "title": "How long do I have to wait after reporting a problem?",
-                "body": <>
-                    <p className="readability">If you have included your email address in the report, you should get an automatic acknowledgement straight away.</p>
-                    <p className="readability">The report that we send has to be logged by a member of Edinburgh Council's staff. They then aim to collect the waste within two working days (Mon-Fri) of our report being logged. Typically this means that a report made on Tuesday will lead to a bin collection on Thursday whereas a report on Friday will be collected the following Tuesday (since Saturday and Sunday are not working days).</p>
-                </>
+                "body": <><p className="readability">The email that Bin Warden sends has to be logged by a member of Edinburgh Council's staff. They then aim to collect the waste within two working days (Mon-Fri) of our report being logged. Typically this means that a report made on Tuesday will lead to a bin collection on Thursday whereas a report on Friday will be collected the following Tuesday (since Saturday and Sunday are not working days).</p></>
             }
         ]
     }, anchor);
@@ -58,7 +59,7 @@ const FAQs = () => {
                     <h4>What information is collected?</h4>
                     <p className="readability">Bin Warden only collects:
                         <ul className="readability">
-                            <li>The date and time that you reported a full bin</li>
+                            <li>The date and time that you report a full bin</li>
                             <li>The location of the bin store</li>
                         </ul>
                     </p>
@@ -72,16 +73,13 @@ const FAQs = () => {
                     </p>
 
                     <h4>Why is the information collected?</h4>
-                    <p className="readability">Date and time information is collected in order to produce a report on how frequently a problem is reported and to display when Edinburgh Council was last notified of an issue.</p>
+                    <p className="readability">Date and time information are collected in order to produce a report on how frequently problems are reported to Edinburgh Council and to display when they were last notified of an issue.</p>
                     
                     <h4>Who is the information shared with or sold to?</h4>
                     <p className="readability">The information is publicly visible on the Bin Warden site and will not be shared with any other entity, nor will it be sold.</p>
                     
                     <h4>What rights do I have over my data?</h4>
                     <p className="readability">No personal or user-identifiable data are stored.</p>
-                    
-                    <h4>How do I contact the Owner of Bin Warden?</h4>
-                    <p className="readability">You can pop a note through my door or ring the bell and say "hi": I'm at number 21.</p>
                 </>
             }
         ]
